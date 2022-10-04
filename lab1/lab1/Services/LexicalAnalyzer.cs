@@ -188,13 +188,13 @@ namespace lab1.Services
                         );
                         break;
                     }
-                    if (!tokenizedProgram.Identificators.Exists(v => v.Name == buffer) && !prevWasVarDeclaration)
-                    {
-                        tokenizedProgram.Lexemes.Add(
-                            new Lexeme(Lexeme.LexemeType.ParsingError, -1, $"Error at line {lineCounter} <Unexpected identificator \"{buffer}\">")
-                        );
-                        break;
-                    }
+                    //if (!tokenizedProgram.Identificators.Exists(v => v.Name == buffer) && !prevWasVarDeclaration)
+                    //{
+                    //    tokenizedProgram.Lexemes.Add(
+                    //        new Lexeme(Lexeme.LexemeType.ParsingError, -1, $"Error at line {lineCounter} <Unexpected identificator \"{buffer}\">")
+                    //    );
+                    //    break;
+                    //}
                     if (prevWasVarDeclaration) {
                         tokenizedProgram.Identificators.Add(
                             new Variable(tokenizedProgram.Lexemes.Last().Value, buffer, varId.ToString())
