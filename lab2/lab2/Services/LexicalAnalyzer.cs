@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
-using lab1.Models;
+using lab2.Models;
 using System.Globalization;
 
-namespace lab1.Services
+namespace lab2.Services
 {
     public class LexicalAnalyzer
     {

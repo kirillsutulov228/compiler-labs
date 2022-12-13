@@ -1,8 +1,6 @@
 ﻿int main(char args[]) {
 	int a = 0;
 	int b;
-	char broken_str[] = "kek";
-	double c = ""
 	do {
 		a++;
 		a += 1;
